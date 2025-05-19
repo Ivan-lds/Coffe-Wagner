@@ -47,7 +47,7 @@
 .catalog-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
   max-width: 1200px;
   padding: 1rem;
