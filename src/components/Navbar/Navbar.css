@@ -1,0 +1,93 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+#logo {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 5px;
+  transition: all .2s ease-in;
+}
+
+#logo:hover {
+  letter-spacing: 12px;
+  color: var(--coffe);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  flex: 1;
+  gap: 7rem;
+}
+
+.navbar ul li a {
+  all: unset;
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.543);
+  cursor: pointer;
+  transition: .3s ease-in;
+  position: relative;
+}
+
+.navbar ul li a:hover {
+  color: var(--coffe);
+}
+
+.navbar ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0%;
+  width: 0%;
+  height: 2px;
+  background: var(--coffe);
+  border-radius: 1rem;
+  transition: .2s ease-in;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+  .navbar, .content, .text {
+    width: 90% !important;
+  }
+  
+  .navbar #logo {
+    font-size: 23px;
+  }
+  
+  .navbar ul {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .navbar {
+    display: flex;
+    gap: 1rem;
+    margin-right: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .navbar ul {
+    gap: 1.5rem;
+  }
+  
+  .navbar ul a {
+    font-size: 14px !important;
+  }
+}

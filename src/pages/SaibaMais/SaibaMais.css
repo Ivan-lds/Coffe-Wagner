@@ -1,0 +1,244 @@
+.saiba-mais-page {
+  width: 100%;
+  color: white;
+}
+
+.saiba-mais-hero {
+  width: 80%;
+  margin: 2rem auto 4rem;
+  text-align: center;
+  padding: 2rem 2rem;
+  background-color: rgba(200, 131, 90, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.saiba-mais-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #2B0A02;
+}
+
+.saiba-mais-hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.coffee-info-section,
+.coffee-origins-section,
+.brewing-tips-section {
+  width: 80%;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: rgba(27, 10, 2, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.coffee-info-section h2,
+.coffee-origins-section h2,
+.brewing-tips-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #C8835A;
+}
+
+.coffee-info-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.coffee-info-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  color: #1B0A02;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.coffee-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-image-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+.info-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.coffee-info-card:hover .info-image-container img {
+  transform: scale(1.05);
+}
+
+.info-content {
+  padding: 1.5rem;
+}
+
+.info-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #C8835A;
+}
+
+.info-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.origins-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.origins-table-container {
+  overflow-x: auto;
+}
+
+.origins-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1B0A02;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.origins-table th,
+.origins-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.origins-table th {
+  background-color: #C8835A;
+  color: white;
+  font-weight: 600;
+}
+
+.origins-table tr:last-child td {
+  border-bottom: none;
+}
+
+.origins-table tr:hover td {
+  background-color: rgba(200, 131, 90, 0.1);
+}
+
+.brewing-tips-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.brewing-tip {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #1B0A02;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brewing-tip h3 {
+  color: #C8835A;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.brewing-tip p {
+  line-height: 1.6;
+}
+
+.back-to-catalog {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: #C8835A;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+  background-color: #1B0A02;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 1200px) {
+  .saiba-mais-hero,
+  .coffee-info-section,
+  .coffee-origins-section,
+  .brewing-tips-section {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .coffee-info-container,
+  .brewing-tips-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .saiba-mais-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .saiba-mais-hero p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .saiba-mais-hero,
+  .coffee-info-section,
+  .coffee-origins-section,
+  .brewing-tips-section {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  
+  .saiba-mais-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .origins-table th,
+  .origins-table td {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .brewing-tip {
+    padding: 1.2rem;
+  }
+  
+  .brewing-tip h3 {
+    font-size: 1.1rem;
+  }
+  
+  .brewing-tip p {
+    font-size: 0.9rem;
+  }
+}
